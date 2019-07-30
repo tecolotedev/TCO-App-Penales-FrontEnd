@@ -9,7 +9,7 @@ const  NavBar =props=>{
     return(
         <React.Fragment>
             <nav>
-                <div className="nav-wrapper indigo">
+                <div className="nav-wrapper blue">
                     <a className="waves-effect waves-light modal-trigger brand-logo right " href="#modal1">{mensaje}</a>
                 </div>
             </nav>

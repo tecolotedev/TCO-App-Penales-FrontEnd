@@ -27,7 +27,7 @@ const Tabs = props=>{
         <div className="row">
             <div className="col s12">
                 <ul className="tabs">
-                    <li className="tab col s6"><a className="active" href="#test1">Ingresar </a></li>
+                    <li className="tab col s6"><a  href="#test1">Ingresar </a></li>
                     <li className="tab col s6"><a  href="#test2">Crea una cuenta Nueva</a></li>
                 </ul>
             </div>
