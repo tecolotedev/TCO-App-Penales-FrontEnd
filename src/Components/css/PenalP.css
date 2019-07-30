@@ -1,0 +1,13 @@
+#cssbadgeup, #cssbadgedown{
+    margin: 0;
+    padding: 0;
+}
+#iconup,#cssbadgeup{
+    color: #9ccc65;
+}
+#icondown, #cssbadgedown{
+    color: #ef5350;
+}
+.right,.left{
+    cursor: pointer;
+}

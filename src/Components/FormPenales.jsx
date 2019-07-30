@@ -23,7 +23,7 @@ const FormPenales = props=>{
             return
         }
         const data = {equipo1,equipo2,liga,url};
-        axios.post('/penales',data).then(res=>{
+        axios.post('/penalesp',data).then(res=>{
             console.log(res);
             Swal.fire({
                 text: 'Se verificara la veracidad del post antes de ser publicado',
