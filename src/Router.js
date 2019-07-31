@@ -7,14 +7,17 @@ import Home from './Views/Home.jsx';
 
 const Router = props=>{
     const [penalesP,setPenalesP] = useState(null);
+    const [penalesA,setPenalesA] = useState(null);
     useEffect(()=>{
         axios.get('/penalesp').then(res=>setPenalesP(res.data.penalesP)).catch(err=>console.log(err));
+        axios.get('/penalesA').then(res=>setPenalesA(res.data.penalesA)).catch(err=>console.log(err));
     },[]);
+    
     return(
         <BrowserRouter>
             <Switch>
                 <Route exact path="/" render={props=>{
-                    return(<Home penalesP={penalesP}/>);
+                    return(<Home penalesP={penalesP} penalesA={penalesA}/>);
                 }}/>
             </Switch>
         </BrowserRouter>

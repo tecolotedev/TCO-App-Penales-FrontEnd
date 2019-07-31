@@ -9,7 +9,7 @@ const Home = props=>{
         <div>
             <NavBar/>
             <FormPenales/>
-            <InfoPenales penalesP={props.penalesP}/>
+            <InfoPenales penalesP={props.penalesP} penalesA={props.penalesA}/>
         </div>
     );
 }

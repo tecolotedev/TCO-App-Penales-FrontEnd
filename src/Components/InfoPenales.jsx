@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/InfoPenales.css';
-import PenalesP from './PenalesP.jsx';
+import Penales from './Penales.jsx';
 const InfoPenales = props =>{
     return(
         <div className="container">
@@ -13,10 +13,10 @@ const InfoPenales = props =>{
                 </div>
 
                 <div id="aprobados" className="col s12">
-                    unos
+                    <Penales penales={props.penalesA}/>
                 </div>
                 <div id="pendientes" className="col s12">
-                    <PenalesP penalesP={props.penalesP}/>
+                    <Penales penales={props.penalesP}/>
                 </div>
             </div>
         </div>
