@@ -2,9 +2,12 @@ import React from 'react';
 import 'materialize-css/dist/css/materialize.min.css';
 import Tabs from './Tabs.jsx';
 const  NavBar =props=>{   
-    let login = false;
+    const salir=()=>{
+        localStorage.removeItem('token');
+        props.setToken(null);
+    }
     let mensaje = '';
-    if(login) mensaje = 'Salir';
+    if(props.token) mensaje = <span onClick={salir} >Salir</span>;
     else mensaje = 'Ingresar'
     return(
         <React.Fragment>
@@ -16,7 +19,7 @@ const  NavBar =props=>{
 
             <div id="modal1" className="modal">
                 <div className="modal-content">
-                    <Tabs/>
+                    <Tabs setToken={props.setToken}/>
                 </div>
             </div>
         </React.Fragment>
